@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5FC87952AC7BF6F00228AA7 /* divideoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC87942AC7BF6F00228AA7 /* divideoApp.swift */; };
+		F5FC87972AC7BF6F00228AA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC87962AC7BF6F00228AA7 /* ContentView.swift */; };
+		F5FC87992AC7BF7100228AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FC87982AC7BF7100228AA7 /* Assets.xcassets */; };
+		F5FC879C2AC7BF7100228AA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FC879B2AC7BF7100228AA7 /* Preview Assets.xcassets */; };
+		F5FC87A62AC7BF7100228AA7 /* divideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC87A52AC7BF7100228AA7 /* divideoTests.swift */; };
+		F5FC87B02AC7BF7100228AA7 /* divideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC87AF2AC7BF7100228AA7 /* divideoUITests.swift */; };
+		F5FC87B22AC7BF7100228AA7 /* divideoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC87B12AC7BF7100228AA7 /* divideoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5FC87A22AC7BF7100228AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FC87892AC7BF6F00228AA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FC87902AC7BF6F00228AA7;
+			remoteInfo = divideo;
+		};
+		F5FC87AC2AC7BF7100228AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FC87892AC7BF6F00228AA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FC87902AC7BF6F00228AA7;
+			remoteInfo = divideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5FC87912AC7BF6F00228AA7 /* divideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = divideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FC87942AC7BF6F00228AA7 /* divideoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divideoApp.swift; sourceTree = "<group>"; };
+		F5FC87962AC7BF6F00228AA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F5FC87982AC7BF7100228AA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5FC879B2AC7BF7100228AA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5FC87A12AC7BF7100228AA7 /* divideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = divideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FC87A52AC7BF7100228AA7 /* divideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divideoTests.swift; sourceTree = "<group>"; };
+		F5FC87AB2AC7BF7100228AA7 /* divideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = divideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FC87AF2AC7BF7100228AA7 /* divideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divideoUITests.swift; sourceTree = "<group>"; };
+		F5FC87B12AC7BF7100228AA7 /* divideoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divideoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5FC878E2AC7BF6F00228AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FC879E2AC7BF7100228AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FC87A82AC7BF7100228AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5FC87882AC7BF6F00228AA7 = {
+			isa = PBXGroup;
+			children = (
+				F5FC87932AC7BF6F00228AA7 /* divideo */,
+				F5FC87A42AC7BF7100228AA7 /* divideoTests */,
+				F5FC87AE2AC7BF7100228AA7 /* divideoUITests */,
+				F5FC87922AC7BF6F00228AA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5FC87922AC7BF6F00228AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC87912AC7BF6F00228AA7 /* divideo.app */,
+				F5FC87A12AC7BF7100228AA7 /* divideoTests.xctest */,
+				F5FC87AB2AC7BF7100228AA7 /* divideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5FC87932AC7BF6F00228AA7 /* divideo */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC87942AC7BF6F00228AA7 /* divideoApp.swift */,
+				F5FC87962AC7BF6F00228AA7 /* ContentView.swift */,
+				F5FC87982AC7BF7100228AA7 /* Assets.xcassets */,
+				F5FC879A2AC7BF7100228AA7 /* Preview Content */,
+			);
+			path = divideo;
+			sourceTree = "<group>";
+		};
+		F5FC879A2AC7BF7100228AA7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC879B2AC7BF7100228AA7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5FC87A42AC7BF7100228AA7 /* divideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC87A52AC7BF7100228AA7 /* divideoTests.swift */,
+			);
+			path = divideoTests;
+			sourceTree = "<group>";
+		};
+		F5FC87AE2AC7BF7100228AA7 /* divideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC87AF2AC7BF7100228AA7 /* divideoUITests.swift */,
+				F5FC87B12AC7BF7100228AA7 /* divideoUITestsLaunchTests.swift */,
+			);
+			path = divideoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5FC87902AC7BF6F00228AA7 /* divideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FC87B52AC7BF7200228AA7 /* Build configuration list for PBXNativeTarget "divideo" */;
+			buildPhases = (
+				F5FC878D2AC7BF6F00228AA7 /* Sources */,
+				F5FC878E2AC7BF6F00228AA7 /* Frameworks */,
+				F5FC878F2AC7BF6F00228AA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = divideo;
+			productName = divideo;
+			productReference = F5FC87912AC7BF6F00228AA7 /* divideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5FC87A02AC7BF7100228AA7 /* divideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FC87B82AC7BF7200228AA7 /* Build configuration list for PBXNativeTarget "divideoTests" */;
+			buildPhases = (
+				F5FC879D2AC7BF7100228AA7 /* Sources */,
+				F5FC879E2AC7BF7100228AA7 /* Frameworks */,
+				F5FC879F2AC7BF7100228AA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FC87A32AC7BF7100228AA7 /* PBXTargetDependency */,
+			);
+			name = divideoTests;
+			productName = divideoTests;
+			productReference = F5FC87A12AC7BF7100228AA7 /* divideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5FC87AA2AC7BF7100228AA7 /* divideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FC87BB2AC7BF7200228AA7 /* Build configuration list for PBXNativeTarget "divideoUITests" */;
+			buildPhases = (
+				F5FC87A72AC7BF7100228AA7 /* Sources */,
+				F5FC87A82AC7BF7100228AA7 /* Frameworks */,
+				F5FC87A92AC7BF7100228AA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FC87AD2AC7BF7100228AA7 /* PBXTargetDependency */,
+			);
+			name = divideoUITests;
+			productName = divideoUITests;
+			productReference = F5FC87AB2AC7BF7100228AA7 /* divideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5FC87892AC7BF6F00228AA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F5FC87902AC7BF6F00228AA7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F5FC87A02AC7BF7100228AA7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F5FC87902AC7BF6F00228AA7;
+					};
+					F5FC87AA2AC7BF7100228AA7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F5FC87902AC7BF6F00228AA7;
+					};
+				};
+			};
+			buildConfigurationList = F5FC878C2AC7BF6F00228AA7 /* Build configuration list for PBXProject "divideo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5FC87882AC7BF6F00228AA7;
+			productRefGroup = F5FC87922AC7BF6F00228AA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5FC87902AC7BF6F00228AA7 /* divideo */,
+				F5FC87A02AC7BF7100228AA7 /* divideoTests */,
+				F5FC87AA2AC7BF7100228AA7 /* divideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5FC878F2AC7BF6F00228AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FC879C2AC7BF7100228AA7 /* Preview Assets.xcassets in Resources */,
+				F5FC87992AC7BF7100228AA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FC879F2AC7BF7100228AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FC87A92AC7BF7100228AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5FC878D2AC7BF6F00228AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FC87972AC7BF6F00228AA7 /* ContentView.swift in Sources */,
+				F5FC87952AC7BF6F00228AA7 /* divideoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FC879D2AC7BF7100228AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FC87A62AC7BF7100228AA7 /* divideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FC87A72AC7BF7100228AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FC87B02AC7BF7100228AA7 /* divideoUITests.swift in Sources */,
+				F5FC87B22AC7BF7100228AA7 /* divideoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5FC87A32AC7BF7100228AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FC87902AC7BF6F00228AA7 /* divideo */;
+			targetProxy = F5FC87A22AC7BF7100228AA7 /* PBXContainerItemProxy */;
+		};
+		F5FC87AD2AC7BF7100228AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FC87902AC7BF6F00228AA7 /* divideo */;
+			targetProxy = F5FC87AC2AC7BF7100228AA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F5FC87B32AC7BF7200228AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5FC87B42AC7BF7200228AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5FC87B62AC7BF7200228AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"divideo/Preview Content\"";
+				DEVELOPMENT_TEAM = TSR5V72NH9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = globalvar.divideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5FC87B72AC7BF7200228AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"divideo/Preview Content\"";
+				DEVELOPMENT_TEAM = TSR5V72NH9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = globalvar.divideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5FC87B92AC7BF7200228AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TSR5V72NH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = globalvar.divideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/divideo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/divideo";
+			};
+			name = Debug;
+		};
+		F5FC87BA2AC7BF7200228AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TSR5V72NH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = globalvar.divideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/divideo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/divideo";
+			};
+			name = Release;
+		};
+		F5FC87BC2AC7BF7200228AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TSR5V72NH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = globalvar.divideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = divideo;
+			};
+			name = Debug;
+		};
+		F5FC87BD2AC7BF7200228AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TSR5V72NH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = globalvar.divideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = divideo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5FC878C2AC7BF6F00228AA7 /* Build configuration list for PBXProject "divideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FC87B32AC7BF7200228AA7 /* Debug */,
+				F5FC87B42AC7BF7200228AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FC87B52AC7BF7200228AA7 /* Build configuration list for PBXNativeTarget "divideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FC87B62AC7BF7200228AA7 /* Debug */,
+				F5FC87B72AC7BF7200228AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FC87B82AC7BF7200228AA7 /* Build configuration list for PBXNativeTarget "divideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FC87B92AC7BF7200228AA7 /* Debug */,
+				F5FC87BA2AC7BF7200228AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FC87BB2AC7BF7200228AA7 /* Build configuration list for PBXNativeTarget "divideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FC87BC2AC7BF7200228AA7 /* Debug */,
+				F5FC87BD2AC7BF7200228AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5FC87892AC7BF6F00228AA7 /* Project object */;
+}
