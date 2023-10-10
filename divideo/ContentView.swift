@@ -11,7 +11,9 @@ enum AppScreen {
 
 typealias CompletionClosure = ((Swift.Result<Void,Error>) ->())
 
+
 struct ContentView: View {
+    
     @State private var currentScreen: AppScreen = .welcome
     @State private var selectedVideoURL: URL?
 
@@ -139,8 +141,6 @@ struct VideoEditingView: View {
                     Button(markers.contains(currentTime) ? "Splitted" : "Split") {
                         if !markers.contains(currentTime) {
                             markers.append(currentTime)
-                            print(currentTime)
-                            print(markers)
                         }
                     }
                     .padding()
@@ -284,36 +284,58 @@ struct ProgressScreen: View {
         let sortedMarkers = markers.sorted()
         let timestamp = Date().timeIntervalSince1970
         
-        func exportSegmentRecursively(index: Int, startMarker: CMTime) {
-            guard index < sortedMarkers.count else {
-                // All segments have been exported
-                isExporting = false // Export is finished
-                print("Export is finished")
-                return
-            }
-            
-            let endMarker = (index == sortedMarkers.count - 1) ? asset.duration : sortedMarkers[index]
-            exportVideoSegment(asset: asset, startMarker: startMarker, endMarker: endMarker, index: index, timestamp: timestamp) { completion in
-                
-                switch completion {
-                case .success:
-                    // Calculate export progress and update it
-                    exportProgress = Double(index + 1) / Double(sortedMarkers.count)
-                    
-                    // Continue exporting the next segment
-                    exportSegmentRecursively(index: index + 1, startMarker: endMarker)
-                    
-                case .failure(let error):
-                    print("error \(error)")
+        func exportSegmentRecursively(index: Int) {
+            if index < sortedMarkers.count {
+                if index == 0 {
+                    // Export from the beginning to the first marker
+                    exportVideoSegment(asset: asset, startMarker: .zero, endMarker: sortedMarkers[index], index: index, timestamp: timestamp) { completion in
+                        switch completion {
+                        case .success:
+                            // Calculate export progress and update it
+                            exportProgress = Double(index + 1) / Double(sortedMarkers.count)
+
+                            // Continue exporting the next segment
+                            exportSegmentRecursively(index: index + 1)
+                        case .failure(let error):
+                            print("error \(error)")
+                        }
+                    }
+                } else {
+                    // Export between markers
+                    let previousMarker = sortedMarkers[index - 1]
+                    exportVideoSegment(asset: asset, startMarker: previousMarker, endMarker: sortedMarkers[index], index: index, timestamp: timestamp) { completion in
+                        switch completion {
+                        case .success:
+                            // Calculate export progress and update it
+                            exportProgress = Double(index + 1) / Double(sortedMarkers.count)
+
+                            // Continue exporting the next segment
+                            exportSegmentRecursively(index: index + 1)
+                        case .failure(let error):
+                            print("error \(error)")
+                        }
+                    }
+                }
+            } else {
+                // Export video from the latest marker to the end
+                if let lastMarker = sortedMarkers.last {
+                    exportVideoSegment(asset: asset, startMarker: lastMarker, endMarker: asset.duration, index: sortedMarkers.count, timestamp: timestamp) { completion in
+                        switch completion {
+                        case .success:
+                            // All segments have been exported
+                            isExporting = false // Export is finished
+                            print("Export is finished")
+                        case .failure(let error):
+                            print("error \(error)")
+                        }
+                    }
                 }
             }
         }
         
-        guard let firstMarker = sortedMarkers.first else { return }
-
         // Start exporting segments recursively
         isExporting = true // Exporting started
-        exportSegmentRecursively(index: 0, startMarker: firstMarker)
+        exportSegmentRecursively(index: 0)
     }
     
     private func saveVideoToCameraRoll(_ url: URL, completion: @escaping(CompletionClosure)) {
