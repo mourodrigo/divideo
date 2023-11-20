@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F56F89622AD4E78E00765AF9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F56F89612AD4E78E00765AF9 /* FirebaseAnalytics */; };
+		F56F89642AD4E78E00765AF9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F56F89632AD4E78E00765AF9 /* FirebaseCrashlytics */; };
+		F56F89662AD4E78E00765AF9 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F56F89652AD4E78E00765AF9 /* FirebaseRemoteConfig */; };
+		F582CBAF2B0B3DD400F30EBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F582CBAE2B0B3DD400F30EBE /* GoogleService-Info.plist */; };
 		F5FC87952AC7BF6F00228AA7 /* divideoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC87942AC7BF6F00228AA7 /* divideoApp.swift */; };
 		F5FC87972AC7BF6F00228AA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC87962AC7BF6F00228AA7 /* ContentView.swift */; };
 		F5FC87992AC7BF7100228AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FC87982AC7BF7100228AA7 /* Assets.xcassets */; };
@@ -37,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		F56F895F2AD4D23700765AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F582CBAE2B0B3DD400F30EBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5FC87912AC7BF6F00228AA7 /* divideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = divideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FC87942AC7BF6F00228AA7 /* divideoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divideoApp.swift; sourceTree = "<group>"; };
 		F5FC87962AC7BF6F00228AA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56F89662AD4E78E00765AF9 /* FirebaseRemoteConfig in Frameworks */,
+				F56F89622AD4E78E00765AF9 /* FirebaseAnalytics in Frameworks */,
+				F56F89642AD4E78E00765AF9 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +113,7 @@
 				F5FC87BE2AC7C00200228AA7 /* ThumbnailGenerator.swift */,
 				F5FC87C02AC7C01300228AA7 /* VideoTimelineView.swift */,
 				F5FC87982AC7BF7100228AA7 /* Assets.xcassets */,
+				F582CBAE2B0B3DD400F30EBE /* GoogleService-Info.plist */,
 				F5FC879A2AC7BF7100228AA7 /* Preview Content */,
 			);
 			path = divideo;
@@ -151,6 +160,11 @@
 			dependencies = (
 			);
 			name = divideo;
+			packageProductDependencies = (
+				F56F89612AD4E78E00765AF9 /* FirebaseAnalytics */,
+				F56F89632AD4E78E00765AF9 /* FirebaseCrashlytics */,
+				F56F89652AD4E78E00765AF9 /* FirebaseRemoteConfig */,
+			);
 			productName = divideo;
 			productReference = F5FC87912AC7BF6F00228AA7 /* divideo.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +237,9 @@
 				Base,
 			);
 			mainGroup = F5FC87882AC7BF6F00228AA7;
+			packageReferences = (
+				F56F89602AD4E78E00765AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F5FC87922AC7BF6F00228AA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +258,7 @@
 			files = (
 				F5FC879C2AC7BF7100228AA7 /* Preview Assets.xcassets in Resources */,
 				F5FC87992AC7BF7100228AA7 /* Assets.xcassets in Resources */,
+				F582CBAF2B0B3DD400F30EBE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -432,7 +451,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = divideo/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "divide-o";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires to view videos from your gallery.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -466,7 +487,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = divideo/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "divide-o";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires to view videos from your gallery.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -603,6 +625,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F56F89602AD4E78E00765AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F56F89612AD4E78E00765AF9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F56F89602AD4E78E00765AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F56F89632AD4E78E00765AF9 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F56F89602AD4E78E00765AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		F56F89652AD4E78E00765AF9 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F56F89602AD4E78E00765AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5FC87892AC7BF6F00228AA7 /* Project object */;
 }
