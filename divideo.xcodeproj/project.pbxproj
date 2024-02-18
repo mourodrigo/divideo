@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F56A077B2B81DDC900A60500 /* ProgressScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A077A2B81DDC900A60500 /* ProgressScreen.swift */; };
+		F56A077D2B81DE0D00A60500 /* VideoSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A077C2B81DE0D00A60500 /* VideoSelectionViewController.swift */; };
+		F56A077F2B81DE4B00A60500 /* VideoEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A077E2B81DE4B00A60500 /* VideoEditingView.swift */; };
+		F56A07812B81DE7C00A60500 /* Stuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A07802B81DE7C00A60500 /* Stuff.swift */; };
 		F56F89622AD4E78E00765AF9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F56F89612AD4E78E00765AF9 /* FirebaseAnalytics */; };
 		F56F89642AD4E78E00765AF9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F56F89632AD4E78E00765AF9 /* FirebaseCrashlytics */; };
 		F56F89662AD4E78E00765AF9 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F56F89652AD4E78E00765AF9 /* FirebaseRemoteConfig */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F56A077A2B81DDC900A60500 /* ProgressScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressScreen.swift; sourceTree = "<group>"; };
+		F56A077C2B81DE0D00A60500 /* VideoSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSelectionViewController.swift; sourceTree = "<group>"; };
+		F56A077E2B81DE4B00A60500 /* VideoEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditingView.swift; sourceTree = "<group>"; };
+		F56A07802B81DE7C00A60500 /* Stuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stuff.swift; sourceTree = "<group>"; };
 		F56F895F2AD4D23700765AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F582CBAE2B0B3DD400F30EBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5FC87912AC7BF6F00228AA7 /* divideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = divideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +118,10 @@
 				F56F895F2AD4D23700765AF9 /* Info.plist */,
 				F5FC87942AC7BF6F00228AA7 /* divideoApp.swift */,
 				F5FC87962AC7BF6F00228AA7 /* ContentView.swift */,
+				F56A077E2B81DE4B00A60500 /* VideoEditingView.swift */,
+				F56A077C2B81DE0D00A60500 /* VideoSelectionViewController.swift */,
+				F56A07802B81DE7C00A60500 /* Stuff.swift */,
+				F56A077A2B81DDC900A60500 /* ProgressScreen.swift */,
 				F5FC87BE2AC7C00200228AA7 /* ThumbnailGenerator.swift */,
 				F5FC87C02AC7C01300228AA7 /* VideoTimelineView.swift */,
 				F5FC87982AC7BF7100228AA7 /* Assets.xcassets */,
@@ -283,9 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56A077F2B81DE4B00A60500 /* VideoEditingView.swift in Sources */,
+				F56A077B2B81DDC900A60500 /* ProgressScreen.swift in Sources */,
 				F5FC87972AC7BF6F00228AA7 /* ContentView.swift in Sources */,
 				F5FC87952AC7BF6F00228AA7 /* divideoApp.swift in Sources */,
+				F56A077D2B81DE0D00A60500 /* VideoSelectionViewController.swift in Sources */,
 				F5FC87BF2AC7C00200228AA7 /* ThumbnailGenerator.swift in Sources */,
+				F56A07812B81DE7C00A60500 /* Stuff.swift in Sources */,
 				F5FC87C12AC7C01300228AA7 /* VideoTimelineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
