@@ -13,41 +13,49 @@ typealias CompletionClosure = ((Swift.Result<Void,Error>) ->())
 
 
 struct ContentView: View {
-    
+
     @State private var currentScreen: AppScreen = .welcome
     @State private var selectedVideoURL: URL?
 
     var body: some View {
         NavigationView {
-            VStack {
-                Text("divideo")
-                    .font(.title)
-                    .padding()
-                
-                Spacer()
-                
-                Button("Choose Video") {
-                    currentScreen = .videoSelection
-                }
-                .font(.title)
-                .padding(.top, 50)
+            content
+                .navigationViewStyle(StackNavigationViewStyle())
+        }
+        .navigationViewStyle(StackNavigationViewStyle()) // For iPad
+    }
 
-                NavigationLink(
-                    destination: VideoEditingView(
-                        currentScreen: $currentScreen,
-                        selectedVideoURL: selectedVideoURL ?? URL(fileURLWithPath: "")
-                    ),
-                    isActive: .constant(currentScreen == .videoEditing || currentScreen == .progress)
-                ) {
-                    EmptyView()
-                }.padding(.bottom, 50)
+    @ViewBuilder
+    var content: some View {
+        VStack {
+            Text("divideo")
+                .font(.title)
+                .padding()
+
+            Spacer()
+
+            Button("Choose Video") {
+                currentScreen = .videoSelection
             }
-            .sheet(isPresented: .constant(currentScreen == .videoSelection)) {
-                VideoSelectionViewController(
+            .font(.title)
+            .padding(.top, 50)
+
+            NavigationLink(
+                destination: VideoEditingView(
                     currentScreen: $currentScreen,
-                    selectedVideoURL: $selectedVideoURL
-                )
+                    selectedVideoURL: selectedVideoURL ?? URL(fileURLWithPath: "")
+                ),
+                isActive: .constant(currentScreen == .videoEditing || currentScreen == .progress)
+            ) {
+                EmptyView()
             }
+            .padding(.bottom, 50)
+        }
+        .sheet(isPresented: .constant(currentScreen == .videoSelection)) {
+            VideoSelectionViewController(
+                currentScreen: $currentScreen,
+                selectedVideoURL: $selectedVideoURL
+            )
         }
     }
 }
